@@ -1,13 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { StyledSidebar } from './Sidebar.styled';
 import './Sidebar.css'
 
-const Sidebar = ({open}) => {
+const Sidebar = ({open, setOpen}) => {
     return (
         <StyledSidebar open={open}>
-            <div className="Sidebar-about">About Me</div>
-            <div className="Sidebar-exp">Experience</div>
-            <div className="Sidebar-contact">Contact</div>
+            <div className="Sidebar-about">
+                <a href="">About Me</a>
+            </div>
+            <div className="Sidebar-exp">
+                <a href="">Experience</a>
+            </div>
+            <div className="Sidebar-contact">
+                <a href="">Contact</a>
+            </div>
         </StyledSidebar>
     )
 }

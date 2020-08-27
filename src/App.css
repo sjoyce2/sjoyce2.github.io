@@ -6,17 +6,22 @@
 
 .Header {
     text-align: center;
-    background-color: #ae9e83;
+    background-color: #d8dbd7;
     position: fixed;
     width: 100vw;
     z-index: 5;
 }
 
 .Header-name {
-    background-color: #ae9e83;
+    background-color: #d8dbd7;
     height: 100%;
     margin: 0;
     padding: 2vh 0;
+}
+
+a {
+    color: #3f3d3e;
+    text-decoration: none;
 }
 
 .Content {
@@ -41,7 +46,7 @@
 }
 
 .Content-name {
-    background-color: #ae9e83;
+    background-color: #d8dbd7;
     margin: -8px 0 0 0;
     padding: 10px;
     height: 5vmin;
@@ -51,6 +56,29 @@
     color: #61dafb;
 }
 
+.Summary {
+    text-align: center;
+    background: #d8dbd7 no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+}
+
+.Experience {
+
+}
+
+.Contact {
+
+}
+
+.Footer {
+
+}
 /* @keyframes App-logo-spin {
     from {
         transform: rotate(0deg);

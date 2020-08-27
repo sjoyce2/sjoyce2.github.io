@@ -1,37 +1,36 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
+import { useOnClickOutside } from './hooks';
 import logo from './profile.jpg';
 import Sidebar from './Sidebar';
+import Burger from './Burger';
 import './App.css';
 
-class App extends React.Component {
-    render() {
-        return (
-            <div>
-                <Header />
-                <Content />
-                {/* <Footer /> */}
-            </div>
-        )
-    }
+function App(){
+    return (
+        <div className="App">
+            <Header />
+            <Content />
+            <Summary />
+            <Experience />
+            <Contact />
+            <Footer />
+        </div>
+    )
 }
 
-class Header extends React.Component {
-    constructor (props) {
-        super(props);
-        this.state = {
-            menuOpen: false,
-        }
-    }
-    render() {
-        return (
-            <div className="Header">
-                <h1 className="Header-name">
-                    Stephen Joyce
-                </h1>
-                <Sidebar open={this.state.menuOpen}/>
-            </div>
-        )
-    }
+function Header() {
+    const [open, setOpen] = useState(false);
+    const node = useRef();
+    useOnClickOutside(node, () => setOpen(false));
+    return (
+        <div className="Header" ref={node}>
+            <h1 className="Header-name">
+                Stephen Joyce
+            </h1>
+            <Burger open={open} setOpen={setOpen}/>
+            <Sidebar open={open} />
+        </div>
+    )
 }
 
 class Content extends React.Component {
@@ -54,6 +53,39 @@ class Content extends React.Component {
                 </a> */}
             </div>
         );
+    }
+}
+
+class Summary extends React.Component {
+    render() {
+        return (
+            <div className="Summary">
+            </div>
+        );
+    };
+}
+
+class Experience extends React.Component {
+    render() {
+        return (
+            <div className="Experience"></div>
+        );
+    };
+}
+
+class Contact extends React.Component {
+    render() {
+        return (
+            <div className="Contact"></div>
+        );
+    };
+}
+
+class Footer extends React.Component {
+    render() {
+        return (
+            <div className="Footer"></div>
+        )
     }
 }
 
