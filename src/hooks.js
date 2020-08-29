@@ -16,3 +16,7 @@ export const useOnClickOutside = (ref, handler) => {
     [ref, handler],
     );
 };
+
+export const componentDidMount = () => {
+    document.title = 'Stephen Joyce';
+}

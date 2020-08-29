@@ -15,4 +15,8 @@ export const StyledSidebar = styled.div`
     transition: all 0.3s linear;
     transform-origin: 1px;
     transform: ${({ open }) => open ? 'translateY(0)' : 'translateY(-100%)'};
+
+    div {
+        margin: 5px;
+    }
 `;

@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyledSidebar } from './Sidebar.styled';
-import './Sidebar.css'
 
 const Sidebar = ({open, setOpen}) => {
     return (
