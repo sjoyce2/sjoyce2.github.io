@@ -5,13 +5,13 @@ const Sidebar = ({open, setOpen}) => {
     return (
         <StyledSidebar open={open}>
             <div className="Sidebar-about">
-                <a href="">About Me</a>
+                <a href="#content">Stephen Joyce</a>
             </div>
             <div className="Sidebar-exp">
-                <a href="">Experience</a>
+                <a href="#summary">Technologies Used</a>
             </div>
             <div className="Sidebar-contact">
-                <a href="">Contact</a>
+                <a href="#experience">Experience</a>
             </div>
         </StyledSidebar>
     )

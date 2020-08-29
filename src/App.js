@@ -38,9 +38,6 @@ function Header() {
     useOnClickOutside(node, () => setOpen(false));
     return (
         <div className="Header" ref={node}>
-            {/* <h1 className="Header-name">
-                Stephen Joyce
-            </h1> */}
             <Burger open={open} setOpen={setOpen}/>
             <Sidebar open={open} />
         </div>
@@ -50,13 +47,12 @@ function Header() {
 class Content extends React.Component {
     render() {
         return (
-            <div className="Content">
-                <div className="Content-logo-holder">
+            <div className="Content" id="content">
+                <a href="https://www.linkedin.com/in/stephenpjoyce" className="Content-logo-holder">
                     <img src={logo} className="Content-logo" alt="logo" />
-                    <p className="Content-name">
-                        Stephen Joyce
-                    </p>
-                </div>
+                    <p className="Content-name">Stephen Joyce</p>
+                    <p className="Content-position">Software Engineer</p>
+                </a>
             </div>
         );
     }
@@ -66,9 +62,9 @@ class Content extends React.Component {
 class Summary extends React.Component {
     render() {
         return (
-            <div className="Summary">
+            <div className="Summary" id="summary">
                 <h1 className="Summary-title">Technologies Used</h1>
-                <div className="Summary-honeycomb">
+                <div className="Summary-honeycomb" id="summary-honeycomb">
                     <ul id="hexGrid">
                         <li class="hex">
                             <div class="hexIn">
@@ -207,7 +203,7 @@ class Summary extends React.Component {
 class Experience extends React.Component {
     render() {
         return (
-            <div className="Experience">
+            <div className="Experience" id="experience">
                 <h1 className="Experience-title">Experience</h1>
                 <div className="Experience-entry">
                     <h3 className="Experience-company">Gestalt Diagnostics, LLC</h3>
