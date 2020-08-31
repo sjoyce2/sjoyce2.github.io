@@ -32,6 +32,7 @@ a {
 
 .Content-logo-holder {
     box-shadow: 0px 0px 100px 20px #3f3d3e;
+    transition: box-shadow 0.5s ease-in-out;
 }
 
 .Content-logo-holder:hover {
@@ -114,8 +115,13 @@ a {
     padding-top: 0;
 }
 
+.Experience ul {
+    padding: 0;
+    margin: 0;
+}
+
 .Experience-entry {
-    width: 80vw;
+    width: 75vw;
     text-align: left;
     padding: 2vh 0;
 }
@@ -127,7 +133,7 @@ a {
 .Experience-position {
     font-style: italic;
     font-weight: normal;
-    margin: 0;
+    margin: 0 0 10px 0;
 }
 
 .Experience-technologies {
@@ -136,6 +142,9 @@ a {
 }
 
 .Experience-summary {
+    text-indent: -30px;
+    padding-left: 30px;
+    list-style-type: none;
     margin: 0;
 }
 
@@ -235,10 +244,11 @@ a {
     padding: 5%;
     margin: 0;
     box-sizing:border-box;
-    background-color: rgba(0, 128, 128, 0.8);
+    background-color: #3f3d3e;
+    opacity: 0.8;
     font-weight: 300;
-    -webkit-transition:  -webkit-transform .2s ease-out, opacity .3s ease-out;
-            transition:          transform .2s ease-out, opacity .3s ease-out;
+    -webkit-transition:  -webkit-transform .3s ease-out, opacity .3s ease-out;
+            transition:          transform .3s ease-out, opacity .3s ease-out;
 }
 .hex h1 {
     bottom: 50%;

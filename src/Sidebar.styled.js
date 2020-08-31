@@ -16,6 +16,14 @@ export const StyledSidebar = styled.div`
     transform-origin: 1px;
     transform: ${({ open }) => open ? 'translateY(0)' : 'translateY(-100%)'};
 
+    a {
+        transition: color 0.5s ease-in-out;
+    }
+
+    a:hover {
+        color: #98aec3;
+    }
+
     div {
         margin: 5px;
     }

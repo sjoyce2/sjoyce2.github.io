@@ -209,23 +209,29 @@ class Experience extends React.Component {
                     <h3 className="Experience-company">Gestalt Diagnostics, LLC</h3>
                     <h4 className="Experience-position">Software Engineer</h4>
                     <p className="Experience-technologies">Technologies Used: C# (.NET Stack), JavaScript, IIS, React</p>
-                    <p className="Experience-summary">Reduced image load time by 50% in the main platform</p>
-                    <p className="Experience-summary">Continuously developed, integrated, and deployed new software and features</p>
-                    <p className="Experience-summary">Integrated three new file reading systems, improving viewing speed by 25%, reducing file storage size by 50%, and creating the capability for viewing new image types</p>
+                    <ul>
+                        <li className="Experience-summary">- Reduced image load time by 50% in the main platform</li>
+                        <li className="Experience-summary">- Continuously developed, integrated, and deployed new software and features</li>
+                        <li className="Experience-summary">- Integrated three new file reading systems, improving viewing speed by 25%, reducing file storage size by 50%, and creating the capability for viewing new image types</li>
+                    </ul>
                 </div>
                 <div className="Experience-entry">
                     <h3 className="Experience-company">Gestalt Diagnostics, LLC</h3>
                     <h4 className="Experience-position">Software Engineering Intern</h4>
                     <p className="Experience-technologies">Technologies Used: Python, C# (.NET Stack)</p>
-                    <p className="Experience-summary">Researched and created machine learning models for automatic image alignment</p>
-                    <p className="Experience-summary">Created new solutions for improving workflow efficiency</p>
+                    <ul>
+                        <li className="Experience-summary">- Researched and created machine learning models for automatic image alignment</li>
+                        <li className="Experience-summary">- Created new solutions for improving workflow efficiency</li>
+                    </ul>
                 </div>
                 <div className="Experience-entry">
                     <h3 className="Experience-company">Gonzaga University</h3>
-                    <h4 className="Experience-position">Student Researcher</h4>
-                    <p className="Experience-summary">Contributed to disproving the existence of certain methods of polygon dissection</p>
-                    <p className="Experience-summary">Used mathematical formulae and logic to discover non-convex dissections</p>
-                    <p className="Experience-summary">Reimagined strategic approaches to proving case validity</p>
+                    <h4 className="Experience-position">Student Math Researcher</h4>
+                    <ul>
+                        <li className="Experience-summary">- Contributed to disproving the existence of certain methods of polygon dissection</li>
+                        <li className="Experience-summary">- Used mathematical formulae and logic to discover non-convex dissections</li>
+                        <li className="Experience-summary">- Reimagined strategic approaches to proving case validity</li>
+                    </ul>
                 </div>
             </div>
         );

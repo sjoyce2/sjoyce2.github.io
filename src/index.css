@@ -1,12 +1,18 @@
+@font-face {
+	font-family: "Raleway";
+	src: url("raleway.woff");
+	src: url("raleway.woff2");
+	src: url("raleway.eof");
+	src: url("raleway.ttf");
+}
+
 html {
   scroll-behavior: smooth;
+  font-family: "Raleway", sans-serif;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
