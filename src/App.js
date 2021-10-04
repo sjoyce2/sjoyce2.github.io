@@ -18,6 +18,7 @@ import iisLogo from './iis.png';
 import javaLogo from './java.png';
 import reactLogo from './react.png';
 import sqlLogo from './sql.png';
+import Pdf from './resume.pdf';
 
 const App = () => {
     componentDidMount();
@@ -249,12 +250,17 @@ const Volunteering = () => {
     )
 }
 
+const onResumeClick = () => {
+  window.open(Pdf);
+}
+
 const Footer = () => {
     return (
         <div className="Footer">
             <div className="contactLinkHolder">
                 <a href="https://www.linkedin.com/in/stephenpjoyce" className="contactLink">LinkedIn</a>
                 <a href="mailto: sjoyce081@gmail.com" className="contactLink">Email</a>
+                <a onClick={onResumeClick} className="contactLink">Resume</a>
             </div>
             <p className="copyright">Copyright © 2020 Stephen Joyce</p>
         </div>
